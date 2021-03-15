@@ -100,3 +100,9 @@ csc -optimize -out:simple-cs simple.cs
 chmod +x simple-cs
 ./simple-cs <kjvbible_x10.txt | python3 normalize.py >output.txt
 git diff --exit-code output.txt
+
+echo Nim
+nim c -d:danger -o:simple-nim --gc:orc simple.nim
+chmod +x simple-nim
+./simple-nim <kjvbible_x10.txt | python3 normalize.py >output.txt
+git diff --exit-code output.txt

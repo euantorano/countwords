@@ -29,6 +29,7 @@ programs = [
     ('C++', './simple-cpp', './optimized-cpp', '"optimized" isn\'t very optimized'),
     ('Python', 'python3 simple.py', 'python3 optimized.py', ''),
     ('C#', './simple-cs', None, 'original by John Taylor'),
+    ('Nim', './simple-nim', None, ''),
     ('AWK', 'gawk -f simple.awk', 'mawk -f optimized.awk', 'optimized uses `mawk`'),
     ('Forth', '../gforth/gforth-fast simple.fs', '../gforth/gforth-fast optimized.fs', ''),
     ('Shell', 'bash simple.sh', 'bash optimized.sh', 'optimized does `LC_ALL=C sort -S 2G`'),
